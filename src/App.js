@@ -10,7 +10,7 @@ const App = () => {
   const AuthorizationTokenOfManagement = "get the token at auth0 dashboard apis/management/explorer"
 
   const getUsers = async () => {
-    const data = await axios.get(`https://${Domain}/api/v2/users?page=1`, {
+    const data = await axios.get(`https://${Domain}/api/v2/users?page=0`, {
       headers: {
         authorization: `Bearer ${AuthorizationTokenOfManagement}`
       }
